@@ -1,0 +1,50 @@
+* {
+	box-sizing: border-box;
+}
+
+header {
+	@media only screen and (min-width: 768px) {
+	width: 60%;
+	margin: 0 auto;
+	}
+}
+
+body {
+	margin: 0;
+	padding: 0;
+
+	@media only screen and (min-width: 768px) {
+		margin: 2rem;
+	}
+}
+
+video {
+	display: block;
+	max-width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+section div {
+	margin: 0;
+	padding: 16px;
+	line-height: 2rem;
+	font-size: 1.1rem;
+
+	p {
+		display: inline;
+		cursor: default;
+	}
+
+	@media only screen and (min-width: 768px) {
+		max-width: 60%;
+		margin: 0 auto;
+		margin-top: 1.75em;
+		padding: 0;
+	}
+
+}
+
+.highlight {
+	color: orange;
+}
