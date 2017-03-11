@@ -6,13 +6,13 @@ $('video,audio').mediaelementplayer({
 	translationSelector: true
 });
 
-// Selects all p elements (caption) and stores them in textIntervals const
+// Selects all p elements (transcript) and stores them in textIntervals const
 const textIntervals = document.getElementsByTagName('p');
 
 //Adds play event listener to video 
 video.addEventListener('play', () => {
 
-	//Selects the video element and stores it id video const
+	//Selects the video element and stores it in video const
 	const video = document.getElementById('video_html5');
 	
 	//Allows video.currentTime to update as video plays
@@ -27,163 +27,58 @@ video.addEventListener('play', () => {
 			textIntervals[1].className = 'highlight';
 		}
 		else if (video.currentTime > 8 && video.currentTime < 11) {
-			// textIntervals[0].className = '';
 			textIntervals[1].className = '';
 			textIntervals[2].className = 'highlight';
 		}
 		else if (video.currentTime > 11 && video.currentTime < 13) {
-			// textIntervals[0].className = '';
-			// textIntervals[1].className = '';
 			textIntervals[2].className = '';
 			textIntervals[3].className = 'highlight';
 		}
 		else if (video.currentTime > 13 && video.currentTime < 17) {
-			// textIntervals[0].className = '';
-			// textIntervals[1].className = '';
-			// textIntervals[2].className = '';
 			textIntervals[3].className = '';
 			textIntervals[4].className = 'highlight';
 		}
 		else if (video.currentTime > 17 && video.currentTime < 22) {
-			// textIntervals[0].className = '';
-			// textIntervals[1].className = '';
-			// textIntervals[2].className = '';
-			// textIntervals[3].className = '';
 			textIntervals[4].className = '';
 			textIntervals[5].className = 'highlight';
 		}
 		else if (video.currentTime > 22 && video.currentTime < 27) {
-			// textIntervals[0].className = '';
-			// textIntervals[1].className = '';
-			// textIntervals[2].className = '';
-			// textIntervals[3].className = '';
-			// textIntervals[4].className = '';
 			textIntervals[5].className = '';
 			textIntervals[6].className = 'highlight';
 		}
 		else if (video.currentTime > 27 && video.currentTime < 31) {
-			// textIntervals[0].className = '';
-			// textIntervals[1].className = '';
-			// textIntervals[2].className = '';
-			// textIntervals[3].className = '';
-			// textIntervals[4].className = '';
-			// textIntervals[5].className = '';
 			textIntervals[6].className = '';
 			textIntervals[7].className = 'highlight';
 		}
 		else if (video.currentTime > 32 && video.currentTime < 34) {
-			// textIntervals[0].className = '';
-			// textIntervals[1].className = '';
-			// textIntervals[2].className = '';
-			// textIntervals[3].className = '';
-			// textIntervals[4].className = '';
-			// textIntervals[5].className = '';
-			// textIntervals[6].className = '';
 			textIntervals[7].className = '';
 			textIntervals[8].className = 'highlight';
 		}
 		else if (video.currentTime > 34 && video.currentTime < 39) {
-			// textIntervals[0].className = '';
-			// textIntervals[1].className = '';
-			// textIntervals[2].className = '';
-			// textIntervals[3].className = '';
-			// textIntervals[4].className = '';
-			// textIntervals[5].className = '';
-			// textIntervals[6].className = '';
-			// textIntervals[7].className = '';
 			textIntervals[8].className = '';
 			textIntervals[9].className = 'highlight';
 		}
 		else if (video.currentTime > 39 && video.currentTime < 41) {
-			// textIntervals[0].className = '';
-			// textIntervals[1].className = '';
-			// textIntervals[2].className = '';
-			// textIntervals[3].className = '';
-			// textIntervals[4].className = '';
-			// textIntervals[5].className = '';
-			// textIntervals[6].className = '';
-			// textIntervals[7].className = '';
-			// textIntervals[8].className = '';
 			textIntervals[9].className = '';
 			textIntervals[10].className = 'highlight';
 		}
 		else if (video.currentTime > 41 && video.currentTime < 46) {
-			// textIntervals[0].className = '';
-			// textIntervals[1].className = '';
-			// textIntervals[2].className = '';
-			// textIntervals[3].className = '';
-			// textIntervals[4].className = '';
-			// textIntervals[5].className = '';
-			// textIntervals[6].className = '';
-			// textIntervals[7].className = '';
-			// textIntervals[8].className = '';
-			// textIntervals[9].className = '';
 			textIntervals[10].className = '';
 			textIntervals[11].className = 'highlight';
 		}
 		else if (video.currentTime > 46 && video.currentTime < 49) {
-			// textIntervals[0].className = '';
-			// textIntervals[1].className = '';
-			// textIntervals[2].className = '';
-			// textIntervals[3].className = '';
-			// textIntervals[4].className = '';
-			// textIntervals[5].className = '';
-			// textIntervals[6].className = '';
-			// textIntervals[7].className = '';
-			// textIntervals[8].className = '';
-			// textIntervals[9].className = '';
-			// textIntervals[10].className = '';
 			textIntervals[11].className = '';
 			textIntervals[12].className = 'highlight';
 		}
 		else if (video.currentTime > 49 && video.currentTime < 54) {
-			// textIntervals[0].className = '';
-			// textIntervals[1].className = '';
-			// textIntervals[2].className = '';
-			// textIntervals[3].className = '';
-			// textIntervals[4].className = '';
-			// textIntervals[5].className = '';
-			// textIntervals[6].className = '';
-			// textIntervals[7].className = '';
-			// textIntervals[8].className = '';
-			// textIntervals[9].className = '';
-			// textIntervals[10].className = '';
-			// textIntervals[11].className = '';
 			textIntervals[12].className = '';
 			textIntervals[13].className = 'highlight';
 		}
 		else if (video.currentTime > 54 && video.currentTime < 58) {
-			// textIntervals[0].className = '';
-			// textIntervals[1].className = '';
-			// textIntervals[2].className = '';
-			// textIntervals[3].className = '';
-			// textIntervals[4].className = '';
-			// textIntervals[5].className = '';
-			// textIntervals[6].className = '';
-			// textIntervals[7].className = '';
-			// textIntervals[8].className = '';
-			// textIntervals[9].className = '';
-			// textIntervals[10].className = '';
-			// textIntervals[11].className = '';
-			// textIntervals[12].className = '';
 			textIntervals[13].className = '';
 			textIntervals[14].className = 'highlight';
 		}
 		else if (video.currentTime > 58 && video.currentTime < 60) {
-			// textIntervals[0].className = '';
-			// textIntervals[1].className = '';
-			// textIntervals[2].className = '';
-			// textIntervals[3].className = '';
-			// textIntervals[4].className = '';
-			// textIntervals[5].className = '';
-			// textIntervals[6].className = '';
-			// textIntervals[7].className = '';
-			// textIntervals[8].className = '';
-			// textIntervals[9].className = '';
-			// textIntervals[10].className = '';
-			// textIntervals[11].className = '';
-			// textIntervals[12].className = '';
-			// textIntervals[13].className = '';
 			textIntervals[14].className = '';
 			textIntervals[15].className = 'highlight';
 		}
@@ -193,6 +88,7 @@ video.addEventListener('play', () => {
 //Adds mouseup event to textIntervals[i] elements
 for(let i = 0; i < textIntervals.length; i++) {
 	textIntervals[i].addEventListener('mousedown', (e) => {
+		
 		// Selects video element and stores it in video const
 		const video = document.getElementById('video_html5');
 
@@ -264,7 +160,7 @@ for(let i = 0; i < textIntervals.length; i++) {
 	});
 };
 
-//Will reset the class all textIntervals[i] elements to '', removing .highlight
+//Adds 'seeked' event to video which will reset the class all textIntervals[i] elements to '', removing .highlight when user manual changes time via progress bar or by clicking on transcript 
 video.addEventListener('seeked', () => {
 	textIntervals[0].className = '';
 	textIntervals[1].className = '';
