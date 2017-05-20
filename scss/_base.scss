@@ -21,8 +21,12 @@ body {
 video {
 	display: block;
 	max-width: 100%;
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
+}
+
+div#mep_0 {
+	margin: 0 auto;
 }
 
 section div {

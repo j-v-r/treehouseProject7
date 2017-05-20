@@ -85,14 +85,14 @@ video.addEventListener('play', () => {
 	};
 });
 
-//Adds mouseup event to textIntervals[i] elements
+//Adds mousedown event to textIntervals[i] elements
 for(let i = 0; i < textIntervals.length; i++) {
 	textIntervals[i].addEventListener('mousedown', (e) => {
 		
 		// Selects video element and stores it in video const
 		const video = document.getElementById('video_html5');
 
-		//if.. else if statement to set video.currentTime to starting point of given textIntervals[i] on mouseup event
+		//if.. else if statement to set video.currentTime to starting point of given textIntervals[i] on mousedown event
 		if (e.target === textIntervals[0]) {
 			video.currentTime = 0;
 			e.target.className = 'highlight';
@@ -160,7 +160,7 @@ for(let i = 0; i < textIntervals.length; i++) {
 	});
 };
 
-//Adds 'seeked' event to video which will reset the class all textIntervals[i] elements to '', removing .highlight when user manual changes time via progress bar or by clicking on transcript 
+//Adds 'seeked' event to video which will reset the class all textIntervals[i] elements to '', removing .highlight when user manually changes time via progress bar or by clicking on transcript 
 video.addEventListener('seeked', () => {
 	textIntervals[0].className = '';
 	textIntervals[1].className = '';
