@@ -11,7 +11,8 @@ body {
   padding: 0; }
   @media only screen and (min-width: 768px) {
     body {
-      margin: 2rem; } }
+      margin: 2rem;
+      padding: 1rem; } }
 
 video {
   display: block;
@@ -22,6 +23,13 @@ video {
 div#mep_0 {
   margin: 0 auto; }
 
+@media only screen and (min-width: 768px) {
+  section {
+    max-width: 60%;
+    margin: 0 auto;
+    margin-top: 1.75em;
+    padding: 0; } }
+
 section div {
   margin: 0;
   padding: 16px;
@@ -30,12 +38,6 @@ section div {
   section div p {
     display: inline;
     cursor: default; }
-  @media only screen and (min-width: 768px) {
-    section div {
-      max-width: 60%;
-      margin: 0 auto;
-      margin-top: 1.75em;
-      padding: 0; } }
 
 .highlight {
   color: orange; }

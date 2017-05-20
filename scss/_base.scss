@@ -15,6 +15,7 @@ body {
 
 	@media only screen and (min-width: 768px) {
 		margin: 2rem;
+		padding: 1rem;
 	}
 }
 
@@ -29,6 +30,15 @@ div#mep_0 {
 	margin: 0 auto;
 }
 
+section {
+	@media only screen and (min-width: 768px) {
+		max-width: 60%;
+		margin: 0 auto;
+		margin-top: 1.75em;
+		padding: 0;
+	}
+}
+
 section div {
 	margin: 0;
 	padding: 16px;
@@ -39,14 +49,6 @@ section div {
 		display: inline;
 		cursor: default;
 	}
-
-	@media only screen and (min-width: 768px) {
-		max-width: 60%;
-		margin: 0 auto;
-		margin-top: 1.75em;
-		padding: 0;
-	}
-
 }
 
 .highlight {
